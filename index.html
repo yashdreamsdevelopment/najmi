@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Najmi</title>
 </head>
 
@@ -351,6 +355,29 @@
         </div>
     </section>
 
+    <section id="clients" class="section grid">
+        <div class="container">
+            <div class="container__header">
+                <h1 class="container__header-heading">
+                    Our clients
+                </h1>
+            </div>
+            <section class="customer-logos slider">
+                <div class="slide"><img src="./assets/Clients/alfa-laval.jpg" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/bramha-logo.jpg" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/Forbes-Marshall.jpg" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/indo afrique.png" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/indospace.png" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/Mazak_logo.svg.png" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/Serum-Institute-of-India.png" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/yatec.JPG" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/poona club.jpeg" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients/og-image.jpg" alt="logo"></div>
+                <div class="slide"><img src="./assets/Clients//nyati.jpeg" alt="logo"></div>
+            </section>
+        </div>
+
+    </section>
     <section id="founder" class="section grid">
         <div id="founder__content" class="container grid ">
             <i id="founder__content-quote" class='bx bxs-quote-left'></i>
@@ -371,6 +398,83 @@
 
         </div>
     </section>
+    <footer class="footer-distributed">
+    
+        <div class="footer-left">
+            <h3>Najmi<span>Groups</span></h3>
+    
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+    
+            <p class="footer-company-name">Copyright © 2022 <strong>Najmi Group</strong> All rights reserved</p>
+        </div>
+    
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Aurangabad</span>
+                    Maharashtra</p>
+            </div>
+    
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 74**9**258</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:Aasim.co@gmail.com">AasimNajmi@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Najmi </strong> provide solutions by giving business intelligence models with the emerging technology which helps the client to
+                always be one step ahead from their worthy competitors. Let's join our hands for the growth and prosperity of your
+                company.
+
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    setting: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    setting: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+
+    </script>
 
 </body>
 
