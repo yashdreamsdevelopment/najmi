@@ -362,9 +362,16 @@ button[type="submit"] {
   padding: var(--mb-2-0) 0;
 }
 
+.content__img img {
+  width: 500px;
+  aspect-ratio: 4/3;
+}
+
 .content__contents {
   grid-template-rows: repeat(2, auto-fit);
   gap: 50px;
+  align-self: center;
+  justify-self: center;
   /* border: 2px solid red; */
 }
 
