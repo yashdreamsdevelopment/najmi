@@ -316,3 +316,187 @@ body {
   font-size: var(--small-font-size);
   color: #4c4c4d;
 }
+
+.mimg {
+  display: none;
+}
+
+/* For mobile Screens */
+@media only screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .right h1 {
+    width: 81%;
+    font-size: 30px;
+  }
+
+  .right p {
+    width: 100%;
+  }
+
+  .dimg {
+    display: none;
+  }
+
+  .mimg {
+    display: block;
+  }
+
+  .problems img {
+    margin-bottom: 1px;
+  }
+
+  .problems h1 {
+    width: 69%;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .solution {
+    width: 100%;
+    text-align: center;
+  }
+
+  .solution h1 {
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .mission {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .missionLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -450px;
+  }
+  .missionLeft h2 {
+    width: 48%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .missionLeft p {
+    width: 80%;
+  }
+
+  .missionRight img {
+    height: 200px;
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .visionRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -250px;
+  }
+  .visionRight h2 {
+    width: 48%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .visionRight p {
+    width: 80%;
+  }
+
+  .visionLeft {
+    margin-bottom: 200px;
+    display: flex;
+  }
+
+  .visionLeft img {
+    height: 200px;
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero {
+    width: 100%;
+    display: flex;
+  }
+
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .problems img {
+    height: 260px;
+  }
+
+  .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .missionLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -500px;
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    align-items: center;
+  }
+  .visionRight {
+    margin-bottom: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .visionLeft {
+    margin-bottom: 200px;
+  }
+
+  .showcase {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
